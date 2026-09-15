@@ -1,0 +1,31 @@
+# PYTHON
+__pycache__/
+*.py[cod]
+
+# PACKAGING
+*.egg-info/
+
+# PYTEST
+.pytest_cache/
+
+# JUPYTER
+.ipynb_checkpoints
+
+# EIVIRONMENT
+.venv
+
+# DATA
+*.csv
+*.parquet
+
+# OS
+Thumbs.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# VSCODE
+.vscode/
+
+# LOGS
+*.log

@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chicago-food-inspection-analysis"
+version = "0.1.0"
+description = "This project analyzes Chicago food inspection data to identify patterns in restaurant safety, violations, and inspection outcomes through data cleaning, EDA, visualization, hypothesis testing, and feature engineering."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+authors = [
+    { name = "Babak Nikfar", email = "nikfar@nikintel.com" },
+]
+keywords = ["data-analysis", "data-cleaning", "eda", "visualization"]
+
+dependencies = [
+    "pandas",
+    "numpy",
+    "matplotlib",
+    "seaborn",
+    "pyyaml",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "jupyter",
+    "notebook",
+]
+
+
+# --- Tool configuration ---
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-ra -q"
