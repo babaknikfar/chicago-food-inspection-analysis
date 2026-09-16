@@ -27,6 +27,7 @@ dev = [
     "pytest",
     "jupyter",
     "notebook",
+    "ipykernel",
 ]
 
 
