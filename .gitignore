@@ -11,7 +11,7 @@ __pycache__/
 # JUPYTER
 .ipynb_checkpoints
 
-# EIVIRONMENT
+# ENVIRONMENT
 .venv/
 
 # DATA
@@ -29,3 +29,7 @@ $RECYCLE.BIN/
 
 # LOGS
 *.log
+
+# BUILD
+dist/
+build/
