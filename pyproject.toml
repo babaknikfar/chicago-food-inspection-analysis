@@ -19,7 +19,17 @@ classifiers = [
     "Programming Language :: Python :: 3.12",
     "Topic :: Scientific/Engineering :: Information Analysis",
 ]
-dependencies = []
+dependencies = [
+    "pandas",
+    "numpy",
+    "matplotlib",
+    "seaborn",
+    "scipy",
+    "PyYAML",
+    "jupyterlab",
+    "ipykernel",
+    "nbformat",
+]
 
 [project.optional-dependencies]
 dev = [
