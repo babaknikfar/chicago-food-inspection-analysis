@@ -25,7 +25,6 @@ dependencies = [
     "matplotlib",
     "seaborn",
     "scipy",
-    "PyYAML",
     "jupyterlab",
     "ipykernel",
     "nbformat",
