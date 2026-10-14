@@ -9,6 +9,8 @@ import sys
 from logging.handlers import RotatingFileHandler
 from pathlib import Path
 
+from chicago_food_inspection.paths import LOGS_DIR
+
 _CONFIGURED = False
 
 
@@ -31,9 +33,8 @@ def setup_logging(
     if _CONFIGURED and not force:
         return
 
-    root_dir = Path(__file__).resolve().parent.parent.parent
     if log_file is None:
-        log_dir = root_dir / "logs"
+        log_dir = LOGS_DIR
         log_dir.mkdir(parents=True, exist_ok=True)
         log_file = log_dir / "chicago_food_inspection.log"
     else:
