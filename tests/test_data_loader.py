@@ -9,7 +9,7 @@ import pytest
 from chicago_food_inspection.data_loader import load_data
 
 FIXTURES_DIR = Path(__file__).parent / "fixtures"
-TEST_CSV = FIXTURES_DIR / "test.csv"
+TEST_CSV = FIXTURES_DIR / "sample_dataset.csv"
 
 
 def test_default_load() -> None:

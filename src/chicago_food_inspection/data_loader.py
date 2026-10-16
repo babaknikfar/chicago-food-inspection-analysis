@@ -17,6 +17,7 @@ def load_data(
     *,
     usecols: list[str] | None = None,
     dtypes: dict[str, str] | None = None,
+    low_memory = False,
 ) -> pd.DataFrame:
     """Load a CSV dataset from disk.
 
@@ -39,7 +40,7 @@ def load_data(
             f"Download the dataset from the Chicago Data Portal and place it at: {path}"
         )
 
-    df = pd.read_csv(path, encoding="utf-8", usecols=usecols, dtype=dtypes)
+    df = pd.read_csv(path, encoding="utf-8", usecols=usecols, dtype=dtypes, low_memory=low_memory)
     rows, cols = df.shape
     memory_mb = df.memory_usage(deep=True).sum() / (1024**2)
 

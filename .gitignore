@@ -18,6 +18,9 @@ __pycache__/
 *.csv
 *.parquet
 
+# EXCEPTIONS
+!tests/fixtures/*.csv
+
 # OS
 Thumbs.db
 [Dd]esktop.ini
